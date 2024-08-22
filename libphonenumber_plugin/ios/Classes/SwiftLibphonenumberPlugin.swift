@@ -1,10 +1,10 @@
 import Flutter
 import UIKit
-import PhoneNumberKit
+import PhoneNumberUtility
 
 public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
     
-    let phoneNumberKit: PhoneNumberKit = PhoneNumberKit()
+    let phoneNumberKit: PhoneNumberKit = PhoneNumberUtility()
     
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "plugin.libphonenumber", binaryMessenger: registrar.messenger())
